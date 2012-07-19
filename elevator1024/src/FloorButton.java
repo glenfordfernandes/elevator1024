@@ -2,6 +2,7 @@
 public class FloorButton {
 
 	int fno;
+	Elevator elevObj;
 	elevatorPanel epanel;
 	boolean pressed = false;
 	
@@ -23,11 +24,12 @@ public class FloorButton {
 		{
 			this.pressed = false;
 			
+			
 		}
 		else
 		{
 			this.pressed= true;
-			
+			this.elevObj.currentFloor = this.fno;
 		}
 		
 		return this.pressed;

@@ -11,6 +11,17 @@ public class Alarm {
 		this.alarmState = alarmState;
 	}
 	
-	
+	public void press()
+	{
+		if(this.alarmState)
+		{
+			this.alarmState = false;
+			
+		}
+		else
+		{
+			this.alarmState = true;
+		}
+	}
 		
 }
