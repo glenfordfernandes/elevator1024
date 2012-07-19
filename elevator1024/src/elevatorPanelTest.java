@@ -13,7 +13,7 @@ public class elevatorPanelTest {
 	@Test
 	public void testElevatorPanel() {
 		//fail("Not yet implemented");
-		elevatorPanel epanel = new elevatorPanel();
+		elevatorPanel epanel = new elevatorPanel(4);
 		System.out.println(epanel.ePanel.size());
 		
 	}

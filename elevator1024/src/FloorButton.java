@@ -29,7 +29,10 @@ public class FloorButton {
 		else
 		{
 			this.pressed= true;
-			this.elevObj.currentFloor = this.fno;
+			//this.elevObj.currentFloor = this.fno;
+			System.out.println("Elevator going to "+ this.fno+ " floor");
+			
+			
 		}
 		
 		return this.pressed;

@@ -8,11 +8,12 @@ public class ElevatorDoor  {
 		if(this.eDoorState)
 		{
 			this.eDoorState = false;
-			
+			System.out.println("Elevator door closed");
 		}
 		else
 		{
 			this.eDoorState = true;
+			System.out.println("Elevator door opened");
 		}
 		
 		return eDoorState;
