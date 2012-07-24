@@ -2,9 +2,22 @@
 public abstract class OtherButtons {
 	Alarm alarm;
 	StopButton stpBtn;
-	public void pressAlarm()
+	Elevator elevator;
+	public void press()
 	{
-		this.alarm.press();
+		if(this.alarm.alarmState)
+		{
+			this.alarm.alarmState = false;
+			
+		}
+		else
+		{
+			this.alarm.alarmState = true;
+		}
+	}
+	public void elevStop()
+	{
+		this.elevator.elevState = false;
 	}
 	
 }
