@@ -1,5 +1,5 @@
 
-public class ElevatorDoor  {
+public class ElevatorDoor implements Door  {
 
 	boolean eDoorState = false;
 	
